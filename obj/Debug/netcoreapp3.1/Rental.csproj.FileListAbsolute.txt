@@ -36,3 +36,4 @@ C:\Users\Josh\Documents\SDGKU Work\110\Rental\obj\Debug\netcoreapp3.1\Rental.csp
 C:\Users\Josh\Documents\SDGKU Work\110\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
 C:\Users\Josh\Documents\SDGKU Work\110\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\index.cshtml.g.cs
 C:\Users\Josh\Documents\SDGKU Work\110\Rental\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Register.cshtml.g.cs
+C:\Users\Josh\Documents\SDGKU Work\110\Rental\bin\Debug\netcoreapp3.1\package-lock.json

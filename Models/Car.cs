@@ -9,16 +9,16 @@ namespace Rental.Models
         
         public string Model { get; set; }
 
-        public int Year { get; set; }
+        public string Year { get; set; }
 
-        public decimal DailyPrice { get; set; }
+        public string DailyPrice { get; set; }
 
-        public int Cyls { get; set; }
+        public string Cyls { get; set; }
 
-        public int Passengers { get; set; }
+        public string Passengers { get; set; }
 
         /// 0 - economy, 1 - mid lux, 2 - lux, 3 - sport, 4 - super sport
-        public int Type { get; set; }
+        public string Type { get; set; }
 
         public string ImageUrl { get; set; }
 

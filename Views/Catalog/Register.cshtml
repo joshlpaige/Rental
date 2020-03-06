@@ -2,4 +2,81 @@
     ViewData["title"] = "Register Car";
 }
 
+
+
 <h1>Give me dem cars, fool.</h1>
+
+<div class="form">
+
+            <div class="row">
+                <div class="col-4">
+                    <label>Year</label>
+                </div>
+                <div class="col-8">
+                    <input id="txtYear" type="text" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <label>Make</label>
+                </div>
+                <div class="col-8">
+                    <input id="txtMake" type="text" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <label>Model</label>
+                </div>
+                <div class="col-8">
+                    <input id="txtModel" type="text" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <label>Image</label>
+                </div>
+                <div class="col-8">
+                    <input id="txtImageUrl" type="text" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <label>Daily Price</label>
+                </div>
+                <div class="col-8">
+                    <input id="txtDailyPrice" type="text" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <label>Description</label>
+                </div>
+                <div class="col-8">
+                    <input id="txtDescription" type="text" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-8">
+                    <button id="btnSave" class="btn btn-outline-primary btn-sm" type="button">Update Car</button>
+
+                    
+                </div>
+            
+            </div>
+
+@section Styles{
+    <link href="/css/register.css" rel="stylesheet">
+}
+
+
+@section Scripts{
+    <script src="/js/catalog/register.js"></script>
+}
