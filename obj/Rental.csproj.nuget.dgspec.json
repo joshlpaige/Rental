@@ -1,30 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Josh\\Documents\\SDGKU Work\\110\\Rental\\Rental.csproj": {}
+    "C:\\Users\\paige\\OneDrive\\Documents\\SDGKU Work\\110\\Rental\\Rental.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Josh\\Documents\\SDGKU Work\\110\\Rental\\Rental.csproj": {
+    "C:\\Users\\paige\\OneDrive\\Documents\\SDGKU Work\\110\\Rental\\Rental.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Josh\\Documents\\SDGKU Work\\110\\Rental\\Rental.csproj",
+        "projectUniqueName": "C:\\Users\\paige\\OneDrive\\Documents\\SDGKU Work\\110\\Rental\\Rental.csproj",
         "projectName": "Rental",
-        "projectPath": "C:\\Users\\Josh\\Documents\\SDGKU Work\\110\\Rental\\Rental.csproj",
-        "packagesPath": "C:\\Users\\Josh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Josh\\Documents\\SDGKU Work\\110\\Rental\\obj\\",
+        "projectPath": "C:\\Users\\paige\\OneDrive\\Documents\\SDGKU Work\\110\\Rental\\Rental.csproj",
+        "packagesPath": "C:\\Users\\paige\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\paige\\OneDrive\\Documents\\SDGKU Work\\110\\Rental\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Josh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\paige\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,6 +35,18 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

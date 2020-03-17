@@ -1,8 +1,10 @@
 
-function Car(year, make, model, imageUrl, dailyPrice, description){
+function Car(year, make, model, passengers, fuelType, imageUrl, dailyPrice, description){
     this.year = year;
     this.make = make;
     this.model = model;
+    this.passengers = passengers;
+    this.fuelType = fuelType;
     this.imageUrl = imageUrl;
     this.dailyPrice = dailyPrice;
     this.description = description;
@@ -12,6 +14,8 @@ function clearCar(){
     $("#txtYear").val("");
     $("#txtMake").val("");
     $("#txtModel").val("");
+    $("#txtPassengers").val("");
+    $("#txtFuelType").val("");
     $("#txtImageUrl").val("");
     $("#txtDailyPrice").val("");
     $("#txtDescription").val("");
@@ -25,11 +29,13 @@ function saveCar(){
     var year = $("#txtYear").val();
     var make = $("#txtMake").val();
     var model = $("#txtModel").val();
+    var passengers = $("#txtPassengers").val();
+    var fuelType = $("#txtFuelType").val();
     var imageUrl = $("#txtImageUrl").val();
     var dailyPrice = $("#txtDailyPrice").val();
     var description = $("#txtDescription").val();
 
-    var theCar = new Car(year, make, model, imageUrl, dailyPrice, description);
+    var theCar = new Car(year, make, model, passengers, fuelType, imageUrl, dailyPrice, description);
     console.log(theCar);
 
     $.ajax({
@@ -71,6 +77,20 @@ function init(){
     })
 
     $("#txtModel").keypress(function(e){
+
+        if(e.key == "Enter"){
+            saveCar();
+        }
+    })
+
+    $("#txtPassengers").keypress(function(e){
+
+        if(e.key == "Enter"){
+            saveCar();
+        }
+    })
+
+    $("#txtFuelType").keypress(function(e){
 
         if(e.key == "Enter"){
             saveCar();

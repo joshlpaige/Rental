@@ -6,10 +6,27 @@ function fetchCatalog() {
         url: '/Catalog/GetCatalog',
         success: function (res) {
             console.log("From server", res);
+            
+
+            // TODO: Sort the cars (res array) from low to high price
+
+            // var sorted = []
+            // sorted = res.sort(function(left, right){
+            //      if(left.dailyPrice < right.dailyPrice){
+            //          return -1; the first parameter goes first
+            // }
+            //      else if(right.dailyPrice < left.dailyPrice){
+            //          return 1;  
+            // }
+            // 1
+            // });
+            
+            var sortPrice = res.sort((left, right) => left.dailyPrice - right.dailyPrice);
+
 
             for (var i = 0; i < res.length; i++) {
                 var car = res[i]
-                displayCar(car);
+                displayCar(car, sortPrice);
             }
         },
         error: function (details) {
@@ -29,9 +46,10 @@ function displayCar(car) {
                 <h1><b>${car.year} ${car.make} ${car.model}</b></h1>
                 <h2><i class="far fa-user">${car.passengers}</i> Passengers <i class="fas fa-gas-pump"> ${car.fuelType}</i></h2>
                 <p>${car.description}</p>
-                <br>
+                
                 <p><span>$${car.dailyPrice}</span>/day</p>
             </div>
+                <br>
                 <br>
             <div class="car-price-btn">
         
