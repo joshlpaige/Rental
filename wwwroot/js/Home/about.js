@@ -1,11 +1,11 @@
-const target = {
+var target = {
     clicked: 0,
     currentFollowers: 0,
     btn: document.querySelector("a.btn"),
     fw: document.querySelector("span.followers")
   };
   
-  const follow = () => {
+  var follow = () => {
     target.clicked += 1;
     target.btn.innerHTML = 'Following <i class="fas fa-user-times"></i>';
   

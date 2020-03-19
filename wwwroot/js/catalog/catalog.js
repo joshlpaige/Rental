@@ -25,8 +25,10 @@ function fetchCatalog() {
 
 
             for (var i = 0; i < res.length; i++) {
-                var car = res[i]
-                displayCar(car, sortPrice);
+                if(sortPrice[i].year && sortPrice[i].make && sortPrice[i].type){
+                    var car = res[i]
+                    displayCar(car, sortPrice[i]);
+                }   
             }
         },
         error: function (details) {
@@ -37,14 +39,17 @@ function fetchCatalog() {
 
 function displayCar(car) {
     var card =
-        `<div class="wrapper">
+        `
+        <div class="wrapper">
             <div class="car-img">
                 <img src="${car.imageUrl}" height="420" width="554" align="left">
             </div>
             <div class="car-info">
             <div class="car-text">
                 <h1><b>${car.year} ${car.make} ${car.model}</b></h1>
-                <h2><i class="far fa-user">${car.passengers}</i> Passengers <i class="fas fa-gas-pump"> ${car.fuelType}</i></h2>
+                <h2><i class="far fa-user">${car.passengers}</i> Passengers 
+                <i class="fas fa-gas-pump"> ${car.fuelType}</i>
+                <i class="fas fa-car-side"> ${car.type}</i></h2>
                 <p>${car.description}</p>
                 
                 <p><span>$${car.dailyPrice}</span>/day</p>
@@ -56,7 +61,8 @@ function displayCar(car) {
             <button type="button">Rent Me</button>
             </div>
             </div>
-        </div>`;
+        </div>
+        `;
 
     var container = $("#catalog");
     container.append(card);

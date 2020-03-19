@@ -4,16 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Rental</title>
-    <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/politicians-vol-3/444/bernie_bw-512.png">
+    <link rel="icon" href="https://bcassetcdn.com/public/blog/wp-content/uploads/2019/07/18095016/4-cool-driver.png">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     @RenderSection("Styles", required: false)
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Rental</a>
+                
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="https://bcassetcdn.com/public/blog/wp-content/uploads/2019/07/18095016/4-cool-driver.png" width="150" height="150" class="d-inline-block align-top" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -24,14 +25,12 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About Me</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Catalog" asp-action="Register">Register</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Catalog" asp-action="Index">Catalog</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Catalog" asp-action="Register">Register</a>
-                        </li>
+                        
                         
                     </ul>
                 </div>
@@ -42,11 +41,13 @@
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
+        
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer">
         <div class="container">
-            &copy; 2020 - Rental - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2020 - Rental - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy - </a>
+            <a asp-area="" asp-controller="Home" asp-action="About">About</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

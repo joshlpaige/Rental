@@ -9,9 +9,7 @@ html, body {
   height: 100%;
 }
 
-body {
-  background: #fdf1ec;
-}
+
 
 .card {
   position: absolute;
@@ -138,6 +136,7 @@ body {
 .card .ds-info .pens h6, .card .ds-info .projects h6, .card .ds-info .posts h6 {
   text-transform: uppercase;
   color: #637ef3;
+  text-decoration: none;
 }
 .card .ds-info .pens p, .card .ds-info .projects p, .card .ds-info .posts p {
   font-size: 12px;

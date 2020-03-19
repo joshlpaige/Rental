@@ -1,0 +1,18 @@
+body {
+    padding-top: 56px;
+  }
+
+.lady{
+    background-image: url(https://images.unsplash.com/photo-1468818438311-4bab781ab9b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.btn {
+    background-color: #637ef3;
+    cursor: pointer;
+    outline: none;
+}
+

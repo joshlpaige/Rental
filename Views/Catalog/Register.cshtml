@@ -3,90 +3,95 @@
 }
 
 
-<div class="wrapper">
-
-            <div class="row">
-                <div class="col-4">
-                    <label>Year</label>
-                </div>
-                <div class="col-8">
-                    <input id="txtYear" type="text" class="form-control">
-                </div>
+      <form action="index.html" method="post">
+        
+        <h1>Register Rental Vehicle</h1>
+        
+        <fieldset>
+          
+          <legend><span class="number">1</span>Car Basic Info</legend>
+          <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="Image">Car Image:</label>
+                <input type="text" id="txtImageUrl" name="Car_Image">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Year">Year:</label>
+                <input type="text" id="txtYear" name="Car_Year">
+              </div>
+            </div> 
+          <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="Make">Make:</label>
+                <input type="text" id="txtMake" name="Car_Make">
+               </div>
+               <div class="form-group col-md-6"> 
+                <label for="Model">Model</label>
+                <input type="text" id="txtModel" name="Car_Model">
+               </div>
+          </div>           
+        
+        <fieldset>
+          
+          <legend><span class="number">2</span> Car profile</legend>
+        <div class="form-row">
+              <div class="form-group col-md-6">
+          <label>Car Type:</label>
+          <select id="txtType" name="car_type">
+            <optgroup label="Cars">
+              <option value="economy">Economy</option>
+              <option value="mid-lux">Mid Luxury</option>
+              <option value="Luxory">Luxory</option>
+              <option value="Sport">Sport</option>
+            </optgroup>
+            <optgroup label="Sport-Utility Vehicle">
+              <option value="Full_SUV">Full-Size SUV</option>
+              <option value="Mid_Size">Mid Size</option>
+              <option value="Sub_Compact">Sub-Compact</option>
+            </optgroup>
+            <optgroup label="Truck">
+              <option value="All_Wheel_Drive">All-Wheel Drive</option>
+              <option value="4_Wheel">4-Wheel Drive</option>
+              <option value="Compact">Compact</option>
+            </optgroup>
+            </select>
+              </div>
+              <div class="form-group col-md-6">
+          <label>Fuel Type:</label>
+          <select id="txtFuelType" name="fuel_type">
+            <optgroup label="Gas">
+              <option value="Regular">Regular</option>
+              <option value="Supreme">Supreme</option>
+            </optgroup>
+            <optgroup label="Other">
+              <option value="Hybrid">Hybrid-Gas</option>
+              <option value="Electric">Electric</option>
+            </optgroup>
+            </select>
             </div>
+        </div>
+        </fieldset>
+        
+        <div class="form-row">
+              <div class="form-group col-md-6">
+          <label for="Passengers">Passenger Capacity:</label>
+          <input type="text" id="txtPassengers" name="Passengers">
+              </div>
+              <div class="form-group col-md-6">
+          <label for="Daily_Price">Daily Price:</label>
+          <input type="text" id="txtDailyPrice" name="Daily_Price">
+        </div>
+        </div>
 
-            <div class="row">
-                <div class="col-4">
-                    <label>Make</label>
-                </div>
-                <div class="col-8">
-                    <input id="txtMake" type="text" class="form-control">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-4">
-                    <label>Model</label>
-                </div>
-                <div class="col-8">
-                    <input id="txtModel" type="text" class="form-control">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-4">
-                    <label>Passengers</label>
-                </div>
-                <div class="col-8">
-                    <input id="txtPassengers" type="text" class="form-control">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-4">
-                    <label>Fuel Type</label>
-                </div>
-                <div class="col-8">
-                    <input id="txtFuelType" type="text" class="form-control">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-4">
-                    <label>Image</label>
-                </div>
-                <div class="col-8">
-                    <input id="txtImageUrl" type="text" class="form-control">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-4">
-                    <label>Daily Price</label>
-                </div>
-                <div class="col-8">
-                    <input id="txtDailyPrice" type="text" class="form-control">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-4">
-                    <label>Description</label>
-                </div>
-                <div class="col-8">
-                    <input id="txtDescription" type="text" class="form-control">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-4"></div>
-                <div class="col-8 car-price-btn">
-                    <button id="btnSave" class="button" type="button">Update Car</button>
-
-                    
-                </div>
-            
-            </div>
-
+          <label for="description">Provide Vehicle Description:</label>
+          <textarea id="txtDescription" name="vehicle_description"></textarea>
+          
+          
+        </fieldset>
+          
+        <button id="btnSave" type="button">Submit</button>
+        
+      </form>
 @section Styles{
     <link href="/css/register.css" rel="stylesheet">
 }

@@ -1,10 +1,11 @@
 
-function Car(year, make, model, passengers, fuelType, imageUrl, dailyPrice, description){
+function Car(year, make, model, passengers, fuelType, type, imageUrl, dailyPrice, description){
     this.year = year;
     this.make = make;
     this.model = model;
     this.passengers = passengers;
     this.fuelType = fuelType;
+    this.type = type;
     this.imageUrl = imageUrl;
     this.dailyPrice = dailyPrice;
     this.description = description;
@@ -16,6 +17,7 @@ function clearCar(){
     $("#txtModel").val("");
     $("#txtPassengers").val("");
     $("#txtFuelType").val("");
+    $("#txtType").val("");
     $("#txtImageUrl").val("");
     $("#txtDailyPrice").val("");
     $("#txtDescription").val("");
@@ -31,11 +33,12 @@ function saveCar(){
     var model = $("#txtModel").val();
     var passengers = $("#txtPassengers").val();
     var fuelType = $("#txtFuelType").val();
+    var type = $("#txtType").val();
     var imageUrl = $("#txtImageUrl").val();
     var dailyPrice = $("#txtDailyPrice").val();
     var description = $("#txtDescription").val();
 
-    var theCar = new Car(year, make, model, passengers, fuelType, imageUrl, dailyPrice, description);
+    var theCar = new Car(year, make, model, passengers, fuelType, type, imageUrl, dailyPrice, description);
     console.log(theCar);
 
     $.ajax({
